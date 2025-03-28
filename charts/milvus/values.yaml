@@ -583,7 +583,7 @@ minio:
   name: minio
   mode: distributed
   image:
-    tag: "RELEASE.2023-03-20T20-16-18Z"
+    tag: "RELEASE.2025-03-12T18-04-18Z"
     pullPolicy: IfNotPresent
   accessKey: minioadmin
   secretKey: minioadmin
@@ -646,8 +646,8 @@ etcd:
   pdb:
     create: false
   image:
-    repository: "milvusdb/etcd"
-    tag: "3.5.18-r1"
+    repository: "kubesphere/etcd"
+    tag: "3.5.16-0"
     pullPolicy: IfNotPresent
 
   service:
@@ -727,24 +727,24 @@ pulsarv3:
 
   images:
     zookeeper:
-      repository: apachepulsar/pulsar
-      tag: 3.0.7
+      repository: peiit/pulsar
+      tag: 2.11.1
       pullPolicy: IfNotPresent
     bookie:
-      repository: apachepulsar/pulsar
-      tag: 3.0.7
+      repository: peiit/pulsar
+      tag: 2.11.1
       pullPolicy: IfNotPresent
     autorecovery:
-      repository: apachepulsar/pulsar
-      tag: 3.0.7
+      repository: peiit/pulsar
+      tag: 2.11.1
       pullPolicy: IfNotPresent
     broker:
-      repository: apachepulsar/pulsar
-      tag: 3.0.7
+      repository: peiit/pulsar
+      tag: 2.11.1
       pullPolicy: IfNotPresent
     proxy:
-      repository: apachepulsar/pulsar
-      tag: 3.0.7
+      repository: peiit/pulsar
+      tag: 2.11.1
       pullPolicy: IfNotPresent
 
   zookeeper:
